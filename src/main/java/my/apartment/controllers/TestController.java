@@ -38,7 +38,7 @@ public class TestController {
                 .addObject("text1", "This is text1 parameter")
                 .addObject("strings", strings);
 
-        RestTemplate restTemplate = new RestTemplate();
+        /*RestTemplate restTemplate = new RestTemplate();
         String resultTestWs = restTemplate.getForObject(TestController.WS_URI + "/get_all_test", String.class);
         JSONObject resultTestWsJsonObject = new JSONObject(resultTestWs);
         System.out.println(resultTestWs);
@@ -64,7 +64,7 @@ public class TestController {
         
         locale = LocaleContextHolder.getLocale();
 
-        System.out.println(locale + " ok");
+        System.out.println(locale + " ok");*/
 
         return modelAndView;
     }
